@@ -27,7 +27,7 @@
             <input type="submit" name="send_message" value="Отправить сообщение">
         </form>
     </div>
-
+    <!-- <script src="scripts.js"></script> -->
     <div>
     <section class="container">
             <h2>Обращения</h2>

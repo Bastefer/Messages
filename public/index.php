@@ -1,4 +1,6 @@
-
+<?php
+    require "main.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,13 +29,15 @@
     </div>
 
     <div>
-       <section class="container">
+    <section class="container">
             <h2>Обращения</h2>
+            <?php foreach ($messages as $message): ?>
                 <div class="item">
-                    <p3 name="FIO_read"></p3><br>
-                    <p3 name="email_read"></p3><br>
-                    <p3 name="message_text_read"></p3><br>
+                    <p3 name="FIO_read"><?php echo htmlspecialchars($message['FIO']); ?></p3><br>
+                    <p3 name="email_read"><?php echo htmlspecialchars($message['email']); ?></p3><br>
+                    <p3 name="message_text_read"><?php echo htmlspecialchars($message['message_text']); ?></p3><br>
                 </div>
+            <?php endforeach; ?>
         </section>
     </div>
 </body>
